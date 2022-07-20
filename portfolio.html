@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css">
+  </head>
+  <body>
+    <!-- Шапка -->
+    <header class="header">
+      <div class="container header-flex">
+        <a class="header-logo line" lang="en" href="./index.html"
+          >Web<span class="header-logo-side">Studio</span></a
+        >
+        <nav class="nav">
+          <ul class="nav-list list-style">
+            <li><a class="link line" href="./index.html">Студия</a></li>
+            <li><a class="link current line" href="./portfolio.html">Портфолио</a></li>
+            <li><a class="link line" href="./index.html">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="list-style">
+          <li class="header-contact">
+            <a class="contact line" href="mailto:info@devstudio.com">
+              <svg class="contact-icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use></svg
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="contact line" href="tel:+380961111111">
+              <svg class="contact-icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use></svg
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- Примеры работ -->
+    <main>
+      <!-- Фильтр кнопок -->
+      <section class="filter section">
+        <div class="container">
+          <h1 class="visually-hidden">Примеры работ</h1>
+          <ul class="filter__btn list-style list">
+            <li class="btn-item"><button class="exmp-button" type="button">Все</button></li>
+            <li class="btn-item"><button class="exmp-button" type="button">Веб-сайты</button></li>
+            <li class="btn-item"><button class="exmp-button" type="button">Приложения</button></li>
+            <li class="btn-item"><button class="exmp-button" type="button">Дизайн</button></li>
+            <li class="btn-item"><button class="exmp-button" type="button">Маркетинг</button></li>
+          </ul>
+          <!-- Список работ -->
+
+          <ul class="card list-style list">
+            <li class="card-work">
+              <a class="line link-work" href="">
+                <div class="card-thumb">
+                  <img
+                    class="card-img"
+                    src="./images/portfolio/website.jpg"
+                    alt="показан сайт на ноутбуке"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="card-overlay">
+                    <div class="card-desc">
+                      <p>
+                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                        компании или частном лице.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-exmp">
+                  <h2 class="title exmp">Технокряк</h2>
+                  <p class="text exmp">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="card-work">
+              <a class="line link-work" href="">
+                <div class="card-thumb">
+                  <img
+                    class="card-img"
+                    src="./images/portfolio/design.jpg"
+                    alt="два баскетболиста в прыжке с мячом"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="card-overlay">
+                    <div class="card-desc">
+                      <p>
+                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                        компании или частном лице.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-exmp">
+                  <h2 class="title exmp" lang="en">Постер New Orlean vs Golden Star</h2>
+                  <p class="text exmp">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-work">
+              <a class="line link-work" href="">
+                <div class="card-thumb">
+                  <img
+                    class="card-img"
+                    src="./images/portfolio/app.jpg"
+                    alt="логотип ресторана seafood"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="card-overlay">
+                    <div class="card-desc">
+                      <p>
+                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                        компании или частном лице.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-exmp">
+                  <h2 class="title exmp">Ресторан Seafood</h2>
+                  <p class="text exmp">Приложение</p>
+                </div></a
+              >
+            </li>
+            <li class="card-work">
+              <a class="line link-work" href="">
+                <div class="card-thumb">
+                  <img
+                    class="card-img"
+                    src="./images/portfolio/marketing.jpg"
+                    alt="черные наушники"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="card-overlay">
+                    <div class="card-desc">
+                      <p>
+                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                        компании или частном лице.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-exmp">
+                  <h2 class="title exmp">Проект Prime</h2>
+                  <p class="text exmp">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-work">
+              <a class="line link-work" href="">
+                <div class="card-thumb">
+                  <img
+                    class="card-img"
+                    src="./images/portfolio/app2.jpg"
+                    alt="белая и коричневая коробки"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="card-overlay">
+                    <div class="card-desc">
+                      <p>
+                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                        компании или частном лице.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-exmp">
+                  <h2 class="title exmp">Проект Boxes</h2>
+                  <p class="text exmp">Приложение</p>
+                </div></a
+              >
+            </li>
+            <li class="card-work">
+              <a class="line link-work" href="">
+                <div class="card-thumb">
+                  <img
+                    class="card-img"
+                    src="./images/portfolio/website2.jpg"
+                    alt="экран монитора"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="card-overlay">
+                    <div class="card-desc">
+                      <p>
+                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                        компании или частном лице.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-exmp">
+                  <h2 class="title exmp" lang="en">Inspiration has no Borders</h2>
+                  <p class="text exmp">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-work">
+              <a class="line link-work" href="">
+                <div class="card-thumb">
+                  <img
+                    class="card-img"
+                    src="./images/portfolio/design2.jpg"
+                    alt="открытый женский журнал"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="card-overlay">
+                    <div class="card-desc">
+                      <p>
+                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                        компании или частном лице.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-exmp">
+                  <h2 class="title exmp">Издание Limited Edition</h2>
+                  <p class="text exmp">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-work">
+              <a class="line link-work" href="">
+                <div class="card-thumb">
+                  <img
+                    class="card-img"
+                    src="./images/portfolio/marketing2.jpg"
+                    alt="белая лейба с текстом lab-el-tag"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="card-overlay">
+                    <div class="card-desc">
+                      <p>
+                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                        компании или частном лице.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-exmp">
+                  <h2 class="title exmp">Проект LAB</h2>
+                  <p class="text exmp">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-work">
+              <a class="line link-work" href="">
+                <div class="card-thumb">
+                  <img
+                    class="card-img"
+                    src="./images/portfolio/app3.jpg"
+                    alt="кто-то печатает на ноутбуке"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="card-overlay">
+                    <div class="card-desc">
+                      <p>
+                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                        компании или частном лице.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-exmp">
+                  <h2 class="title exmp" lang="en">Growing Business</h2>
+                  <p class="text exmp">Приложение</p>
+                </div></a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- Подвал -->
+    <footer class="footer">
+      <div class="container footer-box">
+        <div class="address-box">
+          <a class="footer-logo line" lang="en" href="./index.html"
+            >Web<span class="footer-logo-side">Studio</span></a
+          >
+          <!-- Адрес -->
+          <address class="address-all">
+            <ul class="address-style list">
+              <li class="address-item">
+                <a
+                  class="address line"
+                  href="https://goo.gl/maps/CcYmPfw3a3xQvwCz5"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="address-item">
+                <a class="mail line" href="mailto:info@example.com">info@example.com</a>
+              </li>
+              <li class="address-item">
+                <a class="tel line" href="tel:+380991111111">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <!-- Присоединяйтесь -->
+        <div class="join">
+          <strong class="join-title">присоединяйтесь</strong>
+          <ul class="social__list footer">
+            <li>
+              <a
+                class="social__link social__link--white"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="instagram"
+              >
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="social__link social__link--white"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="instagram"
+              >
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="social__link social__link--white"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="instagram"
+              >
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="social__link social__link--white"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="instagram"
+              >
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Подпишитесь на рассылку -->
+        <div>
+          <strong class="sign-strong">Подпишитесь на рассылку</strong>
+          <form class="form-signup" autocomplete="off">
+            <label class="signup-label">
+              <!-- <span class="pseudolabel">E-mail</span> -->
+              <input class="form-email" type="email" name="email" placeholder="E-mail" />
+            </label>
+            <button class="form-btn-sign" type="submit">
+              Подписаться<svg class="icon-sign" width="24" height="24">
+                <use href="./images/icons.svg#icon-airplane"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

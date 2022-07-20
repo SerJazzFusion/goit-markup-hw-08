@@ -1,0 +1,30 @@
+// Четвертый паршал
+
+.header {
+    font-weight: 500;
+    border-bottom: 1px solid var(--line-color);
+
+    &-flex {
+        display: flex;
+        align-items: center;
+    }
+
+    &-logo {
+    color: var(--accent-color);
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    }
+
+    &-logo.line {
+        margin-right: 93px;
+    }
+      
+    &-logo-side {
+        color: var(--logo-text-color);
+    }
+
+    &-contact {
+        margin-right: 50px;
+      }
+}
+  

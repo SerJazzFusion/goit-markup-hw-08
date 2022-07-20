@@ -1,0 +1,88 @@
+// Третий паршал
+
+.hero-button {
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    padding: 10px 32px;
+    border: none;
+    border-radius: 4px;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+  
+    color: var(--main-bgc-text);
+    background-color: var(--accent-color);
+
+    transition: background-color var(--main-transition), box-shadow var(--main-transition);
+
+        &:hover,
+        &:focus {
+        background-color: var(--bgcolor-btn);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        }
+}
+
+.modal-btn__close {
+    cursor: pointer;
+    position: fixed;
+    display: flex;
+    align-items: center;
+  
+    right: 8px;
+    top: 8px;
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    background-color: transparent;
+    
+    transition: fill var(--main-transition);
+
+        &:hover,
+        &:focus {
+        fill: var(--accent-color);
+        }
+}
+  
+.form-btn-sign {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px 29px;
+    border: none;
+    border-radius: 4px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    
+    color: var(--main-bgc-text);
+    background-color: var(--accent-color);
+  
+    transition: background-color var(--main-transition), box-shadow var(--main-transition);
+  
+        &:hover,
+        &:focus {
+        background-color: var(--bgcolor-btn);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   
+        }
+}
+  
+.btn-send {
+    padding: 10px 56px;
+  }
+
+
+
+

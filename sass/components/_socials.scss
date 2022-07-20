@@ -1,0 +1,75 @@
+// Социальные сети
+
+.social__list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 10px;
+    margin-top: 16px;
+
+    background-color: transparent;
+}
+  
+.social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+  
+    color: var(--border-logo-color);
+  
+    transition: color var(--main-transition), background-color var(--main-transition);
+  
+        &:hover,
+        &:focus {
+        color: var(--main-bgc-text);
+        background-color: var(--accent-color);
+        }
+
+    &--white {
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+          
+            // width: 44px;
+            // height: 44px;
+            // border-radius: 50%;
+        
+        color: var(--main-bgc-text);
+        background-color: rgba(255, 255, 255, 0.1);
+          
+            // transition: background-color var(--main-transition);
+          
+        &--white:hover,
+        &--white:focus {
+        background-color: var(--accent-color);
+        }
+        
+    }
+
+}
+  
+.social__icon {
+    fill: currentColor;
+}
+
+// Подвал
+
+.social__list {
+    &.footer {
+    margin: 0;
+    padding: 0;
+    // gap: 10px;
+    // display: flex;
+    // justify-content: left;
+    // list-style: none;
+    // background-color: transparent;
+    }
+    
+}
+  
+
+  

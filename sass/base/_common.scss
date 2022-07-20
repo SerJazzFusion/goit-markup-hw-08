@@ -1,0 +1,38 @@
+// Второй паршал
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+
+  background-color: var(--main-bgc-text);
+  color: var(--primary-text-color);
+  }
+
+.link {
+    text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 33px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  
+    color: var(--primary-text-color);
+  
+    transition: color var(--main-transition);
+  
+      &:hover,
+      &:focus {
+      color: var(--accent-color);
+      }
+}
+
+.about__title,
+.team__title,
+.customers__title {
+
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+}
+
