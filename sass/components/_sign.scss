@@ -1,24 +1,55 @@
+
 .sign-strong {
   display: block;
+  text-align: center;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 20px;
   color: var(--main-bgc-text);
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+    }
+
 }
 
 .form-signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    @media screen and (min-width: 1200px) {
     display: inline-flex;
+    flex-direction: row;
+    justify-content: left;
     gap: 12px;
+    }
+
   }
   
+// .signup-label {
+//   max-width: 450px;
+
+//   @media screen and (min-width: 1200px) {
+//     max-width: 358px;
+//     }
+
+// }
+
+
   .form-email {
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
-    width: 358px;
+    max-width: 450px;
     height: 50px;
     padding-left: 16px;
+
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+      }
   
     color: var(--contacts-text-color);
     background-color: transparent;

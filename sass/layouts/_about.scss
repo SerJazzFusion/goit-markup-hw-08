@@ -1,6 +1,14 @@
 .about {
     padding-top: 0px;
 
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
+
+    &__title {
+        margin-bottom: 50px;
+    }
+
     &__list {
         gap: 30px;
         justify-content: center;
@@ -32,6 +40,6 @@
     }
 }
 
-.title-margin {
-    margin-bottom: 50px;
-}
+// .title-margin {
+//     margin-bottom: 50px;
+// }
