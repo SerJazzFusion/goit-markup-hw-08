@@ -15,18 +15,90 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    
+
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
     <!-- Шапка -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-flex">
         <a class="header-logo line" lang="en" href="./index.html"
           >Web<span class="header-logo-side">Studio</span></a
         >
+        <!-- Кнопка бургера -->
+        <button class="menu-button is-open" type="button" aria-expanded="false" data-menu-button>
+          <svg
+            class="burger-icon"
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+            aria-controls="menu-container">
+            <use class="icon-menu" href="./images/icons.svg#icon-burger-menu"></use>
+            <use class="icon-cross" href="./images/icons.svg#icon-cross-menu"></use>
+          </svg>
+        </button>
+        <!-- Мобильное меню -->
+        <div class="menu-container is-open" 
+        id="menu-container" data-menu>
+          <ul class="mobile-nav list">
+            <li class="mobile-nav-item"><a class="mobile-nav-link accent line" href="./index.html">Студия</a></li>
+            <li class="mobile-nav-item"><a class="mobile-nav-link line" href="./portfolio.html">Портфолио</a></li>
+            <li class="mobile-nav-item"><a class="mobile-nav-link line" href="./index.html">Контакты</a></li>
+          </ul>
+          <ul class="mobile-contacts list">
+            <li class="mobile-contacts-item">
+              <a class="mobile-contacts-tel line" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-contacts-item">
+              <a class="mobile-contacts-mail line" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="mobile-socials list">
+            <li class="mobile-socials-item">
+              <a
+                class="mobile-socials-link line"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="instagram"
+                >Instagram
+              </a>
+            </li>
+            <li class="mobile-socials-item">
+              <a
+                class="mobile-socials-link line"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="instagram"
+                >Twitter
+              </a>
+            </li>
+            <li class="mobile-socials-item">
+              <a
+                class="mobile-socials-link line"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="instagram"
+                >Facebook
+              </a>
+            </li>
+            <li class="mobile-socials-item">
+              <a
+                class="mobile-socials-link line"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="instagram"
+                >LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+          
         <nav class="nav">
           <ul class="nav-list list-style">
             <li><a class="link current line" href="./index.html">Студия</a></li>
@@ -34,7 +106,7 @@
             <li><a class="link line" href="./index.html">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="list-style">
+        <ul class="list-style list-contact">
           <li class="header-contact">
             <a class="contact line" href="mailto:info@devstudio.com">
               <svg class="contact-icon" width="16" height="12">
@@ -50,8 +122,9 @@
             >
           </li>
         </ul>
+
       </div>
-    </header> -->
+    </header>
     <!-- Главная часть -->
     <main>
       <!-- Герой -->
@@ -213,7 +286,7 @@
       <!-- Команда -->
       <section class="team section">
         <div class="container">
-          <h2 class="team__title title-margin">Наша команда</h2>
+          <h2 class="team__title">Наша команда</h2>
           <ul class="team__list list-style">
             <li class="team__item">
               <img
@@ -575,7 +648,8 @@
                   href="https://goo.gl/maps/CcYmPfw3a3xQvwCz5"
                   target="_blank"
                   rel="noreferrer noopener"
-                  >г. Киев, пр-т Леси Украинки, 26</a>
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
               </li>
               <li class="address-item">
                 <a class="mail line" href="mailto:info@example.com">info@example.com</a>
@@ -592,7 +666,7 @@
           <ul class="social__list footer">
             <li>
               <a
-                class="social__link social__link social__link--white"
+                class="social__link social__link--white"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
@@ -661,5 +735,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

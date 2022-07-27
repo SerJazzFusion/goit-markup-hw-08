@@ -1,3 +1,12 @@
+.sign {
+ display: block;
+ 
+
+ @media screen and (min-width: 768px) {
+  width: 450px;
+  }
+}
+
 
 .sign-strong {
   display: block;
@@ -6,6 +15,7 @@
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 20px;
+
   color: var(--main-bgc-text);
 
   @media screen and (min-width: 1200px) {
@@ -18,6 +28,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
     gap: 20px;
 
     @media screen and (min-width: 1200px) {
@@ -29,23 +40,25 @@
 
   }
   
-// .signup-label {
-//   max-width: 450px;
+.signup-label {
+  max-width: 450px;
+  text-align: center;
 
-//   @media screen and (min-width: 1200px) {
-//     max-width: 358px;
-//     }
-
-// }
+ 
+}
 
 
   .form-email {
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
-    max-width: 450px;
+    width: 100%;
     height: 50px;
     padding-left: 16px;
+
+    // @media screen and (min-width: 768px) {
+    //   width: 100%;
+    //   }
 
     @media screen and (min-width: 1200px) {
       width: 358px;

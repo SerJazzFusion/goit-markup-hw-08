@@ -1,5 +1,14 @@
 .join {
-    margin-right: auto;
+    // margin-right: 93px;
+
+    @media screen and (min-width: 768px) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 93px;
+    }
 
     @media screen and (max-width: 1200px) {
         margin-bottom: 60px;

@@ -2,7 +2,13 @@
     background-color: var(--second-bgc-color);
 
     &__title {
-      margin-bottom: 30px;
+      margin-bottom: 30px;font-weight: 700;
+      
+
+      @media screen and (max-width: 1199px) {
+        font-size: 28px;
+      line-height: 1.18;
+      }
 
       @media screen and (min-width: 1200px) {
         margin-bottom: 50px;

@@ -26,6 +26,77 @@
         <a class="header-logo line" lang="en" href="./index.html"
           >Web<span class="header-logo-side">Studio</span></a
         >
+        <!-- Кнопка бургера -->
+        <button class="menu-button is-open" type="button" aria-expanded="false" data-menu-button>
+          <svg
+            class="burger-icon"
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+            aria-controls="menu-container">
+            <use class="icon-menu" href="./images/icons.svg#icon-burger-menu"></use>
+            <use class="icon-cross" href="./images/icons.svg#icon-cross-menu"></use>
+          </svg>
+        </button>
+        <!-- Мобильное меню -->
+        <div class="menu-container is-open" 
+        id="menu-container" data-menu>
+          <ul class="mobile-nav list">
+            <li class="mobile-nav-item"><a class="mobile-nav-link line" href="./index.html">Студия</a></li>
+            <li class="mobile-nav-item"><a class="mobile-nav-link accent line" href="./portfolio.html">Портфолио</a></li>
+            <li class="mobile-nav-item"><a class="mobile-nav-link line" href="./index.html">Контакты</a></li>
+          </ul>
+          <ul class="mobile-contacts list">
+            <li class="mobile-contacts-item">
+              <a class="mobile-contacts-tel line" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-contacts-item">
+              <a class="mobile-contacts-mail line" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="mobile-socials list">
+            <li class="mobile-socials-item">
+              <a
+                class="mobile-socials-link line"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="instagram"
+                >Instagram
+              </a>
+            </li>
+            <li class="mobile-socials-item">
+              <a
+                class="mobile-socials-link line"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="instagram"
+                >Twitter
+              </a>
+            </li>
+            <li class="mobile-socials-item">
+              <a
+                class="mobile-socials-link line"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="instagram"
+                >Facebook
+              </a>
+            </li>
+            <li class="mobile-socials-item">
+              <a
+                class="mobile-socials-link line"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="instagram"
+                >LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
         <nav class="nav">
           <ul class="nav-list list-style">
             <li><a class="link line" href="./index.html">Студия</a></li>
@@ -33,7 +104,7 @@
             <li><a class="link line" href="./index.html">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="list-style">
+        <ul class="list-style list-contact">
           <li class="header-contact">
             <a class="contact line" href="mailto:info@devstudio.com">
               <svg class="contact-icon" width="16" height="12">
@@ -65,7 +136,7 @@
             <li class="btn-item"><button class="exmp-button" type="button">Маркетинг</button></li>
           </ul>
           <!-- Список работ -->
-
+          
           <ul class="card list-style list">
             <li class="card-work">
               <a class="line link-work" href="">
@@ -303,6 +374,7 @@
               >
             </li>
           </ul>
+        
         </div>
       </section>
     </main>
@@ -393,7 +465,7 @@
           </ul>
         </div>
         <!-- Подпишитесь на рассылку -->
-        <div>
+        <div class="sign">
           <strong class="sign-strong">Подпишитесь на рассылку</strong>
           <form class="form-signup" autocomplete="off">
             <label class="signup-label">
@@ -409,5 +481,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

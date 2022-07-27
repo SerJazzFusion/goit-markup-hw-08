@@ -1,0 +1,139 @@
+.menu-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    z-index: 1000000;
+    background-color: transparent;
+    border: none;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  
+    & .icon-cross {
+      display: none;
+    }
+  
+    &.is-open .icon-cross {
+      display: block;
+    }
+  
+    &.is-open .icon-menu {
+      display: none;
+    }
+
+    &:hover .icon-menu,
+    &:focus .icon-menu,
+    &:hover .icon-cross,
+    &:focus .icon-cross {
+      fill: var(--accent-color);
+    }
+    
+  }
+  
+  .menu-container {
+    position: absolute;
+    // display: flex;
+    flex-direction: column;
+    
+    z-index: 1000;
+    
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 40px;
+
+    transform: translateY(-100%);
+    opacity: 0;
+
+    
+    background-color: var(--main-bgc-text);
+
+    transition: transform var(--main-transition);
+
+   
+  
+    &.is-open {
+      display: flex;
+      transform: translateY(0);
+      opacity: 1;
+
+      @media screen and (min-width: 768px) {
+        display: none;
+        }
+    }
+  }
+
+  .mobile-nav {
+    margin-bottom: auto;
+
+    &-item:not(:last-child) {
+      margin-bottom: 32px;
+    }
+
+    &-link {
+      text-decoration: none;
+      font-size: 40px;
+      line-height: 1.18;
+      letter-spacing: 0.02em;
+  
+      color: var(--primary-text-color);
+    }
+  }
+
+  
+
+  .accent {
+    color: var(--accent-color);
+  }
+
+  .mobile-contacts {
+    margin-bottom: 64px;
+
+    &-item:not(:last-child) {
+      margin-bottom: 32px;
+    }
+
+    &-tel {
+      
+      text-decoration: none;
+      font-size: 40px;
+      line-height: 1.18;
+      letter-spacing: 0.02em;
+  
+      color: var(--accent-color);
+    }
+
+    &-mail {
+      font-size: 24px;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+
+      color: var(--second-text-color);
+    }
+   
+   
+  }
+
+  .mobile-socials {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    &-item:not(:last-child) &-link {
+      padding-right: 10px; 
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+
+    &-link {
+      font-size: 18px;
+      line-height: 1.22;
+      letter-spacing: 0.02em;
+
+      color: var(--accent-color);
+    }
+
+  }
