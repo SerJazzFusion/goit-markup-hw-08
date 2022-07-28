@@ -1,12 +1,10 @@
 .sign {
  display: block;
  
-
  @media screen and (min-width: 768px) {
   width: 450px;
   }
 }
-
 
 .sign-strong {
   display: block;
@@ -21,7 +19,6 @@
   @media screen and (min-width: 1200px) {
     text-align: start;
     }
-
 }
 
 .form-signup {
@@ -37,28 +34,20 @@
     justify-content: left;
     gap: 12px;
     }
-
   }
   
 .signup-label {
   max-width: 450px;
   text-align: center;
-
- 
 }
 
-
-  .form-email {
+.form-email {
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
     width: 100%;
     height: 50px;
     padding-left: 16px;
-
-    // @media screen and (min-width: 768px) {
-    //   width: 100%;
-    //   }
 
     @media screen and (min-width: 1200px) {
       width: 358px;

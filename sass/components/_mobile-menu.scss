@@ -3,7 +3,7 @@
     align-items: center;
     padding: 0;
     margin: 0;
-    z-index: 1000000;
+    z-index: 10000;
     background-color: transparent;
     border: none;
 
@@ -53,8 +53,6 @@
 
     transition: transform var(--main-transition);
 
-   
-  
     &.is-open {
       display: flex;
       transform: translateY(0);
@@ -82,8 +80,6 @@
       color: var(--primary-text-color);
     }
   }
-
-  
 
   .accent {
     color: var(--accent-color);
@@ -113,8 +109,6 @@
 
       color: var(--second-text-color);
     }
-   
-   
   }
 
   .mobile-socials {
@@ -135,5 +129,4 @@
 
       color: var(--accent-color);
     }
-
   }
