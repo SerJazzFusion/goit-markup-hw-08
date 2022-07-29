@@ -3,7 +3,8 @@
     align-items: center;
     padding: 0;
     margin: 0;
-    z-index: 10000;
+    z-index: 2;
+    
     background-color: transparent;
     border: none;
 
@@ -14,7 +15,7 @@
     & .icon-cross {
       display: none;
     }
-  
+
     &.is-open .icon-cross {
       display: block;
     }
@@ -29,15 +30,12 @@
     &:focus .icon-cross {
       fill: var(--accent-color);
     }
-    
   }
   
   .menu-container {
     position: absolute;
-    // display: flex;
     flex-direction: column;
-    
-    z-index: 1000;
+    z-index: 1;
     
     top: 0;
     left: 0;
@@ -47,7 +45,6 @@
 
     transform: translateY(-100%);
     opacity: 0;
-
     
     background-color: var(--main-bgc-text);
 
@@ -62,6 +59,8 @@
         display: none;
         }
     }
+
+    
   }
 
   .mobile-nav {

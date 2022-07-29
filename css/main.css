@@ -137,7 +137,7 @@ img {
           align-items: center;
   padding: 0;
   margin: 0;
-  z-index: 10000;
+  z-index: 2;
   background-color: transparent;
   border: none;
 }
@@ -165,7 +165,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  z-index: 1000;
+  z-index: 1;
   top: 0;
   left: 0;
   width: 100vw;
@@ -806,18 +806,26 @@ img {
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   padding: 40px;
-  width: 450px;
-  height: 609px;
+  max-width: 450px;
+  max-height: 609px;
   border-radius: 4px;
-  z-index: 1000000;
+  z-index: 1000;
   background-color: var(--main-bgc-text);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
     height: 581px;
+    max-width: 528px;
+    max-height: 581px;
   }
 }
 
@@ -1359,6 +1367,7 @@ textarea::placeholder {
 
 .filter__btn {
   gap: 8px;
+  row-gap: 15px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
